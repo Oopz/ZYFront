@@ -1,0 +1,17 @@
+.secondary-page {
+	margin-top:100px;
+}
+
+.jumbotron {
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 4px #ccc;
+	background: #fff;
+}
+
+.jumbotron-image {
+	width:240px;
+	height:180px;
+	border-radius:4px;
+}
+
+
