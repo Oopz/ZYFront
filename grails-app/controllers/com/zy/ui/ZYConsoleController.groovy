@@ -8,7 +8,7 @@ class ZYConsoleController {
     def index() { 
 		println params;
 		
-		def page=ZYPage.findByPageKey(params.pageKey);
+		def page=ZYPage.findByPageKey(params.pageKey) ?: new ZYPage('pageKey': params.pageKey, 'pageTitle': '');
 		def sortedSections=page?.pageSections?.sort{it?.sectionIndex};
 		
 		[
@@ -20,13 +20,15 @@ class ZYConsoleController {
 	def savePage() {
 		//println params;
 		
-		def page=ZYPage.findByPageKey(params.pageKey);
+		// TODO: !params.pageKey 时 抛出异常
+		
+		def page=ZYPage.findByPageKey(params.pageKey) ?: new ZYPage('pageKey': params.pageKey, 'pageTitle': '');
 		page?.pageSections?.each {
 			it?.delete();
 		}
 		page?.pageSections?.clear();
 		
-		if(page) {
+		if(params.pageKey) {
 			params.list('pageSections')?.eachWithIndex{ sectionBody, sectionIndex ->
 				def section=new ZYSection(sectionBody: sectionBody, sectionIndex: sectionIndex);
 				page?.addToPageSections(section);

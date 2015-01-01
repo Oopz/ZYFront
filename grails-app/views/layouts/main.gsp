@@ -43,7 +43,7 @@
         <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
-            	<img src="${resource(dir: 'images', file: 'grails_logo.png')}" style="height:50px;float:left;margin-right:10px;padding:10px;">
+            	<img src="${resource(dir: 'images', file: 'zy-logo.png')}" style="height:50px;float:left;margin-right:10px;padding:10px;">
             	<a class="navbar-brand" href="${createLink(controller:'ZYPortal',action:'index')}" style="color:#fff;font-size: 24px;font-family: Microsoft Yahei;">深圳市中易科技</a>
             </div>
             <ul class="nav navbar-nav navbar-right">

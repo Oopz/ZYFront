@@ -3,15 +3,42 @@
 }
 
 .jumbotron {
-	border: 1px solid #ccc;
-	box-shadow: 2px 2px 4px #ccc;
+	border: 1px solid #337ab7;
+	box-shadow: 2px 2px 4px #C6E1FC;
 	background: #fff;
+	color: #337ab7;
+	text-shadow: 2px 2px 2px #C6E1FC;
+	overflow:hidden;
 }
 
 .jumbotron-image {
 	width:240px;
 	height:180px;
 	border-radius:4px;
+	box-shadow:2px 2px 4px #ccc;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.navbar-inverse {
+	background-color:#337ab7;
+	border-color:#2e6da4;
+	box-shadow: 2px 2px 4px #ccc;
+}
+
+.btn-default {
+	color:#337ab7;
+	border-color:#C6E1FC;
+}
+
+.btn-default:hover {
+	color:#114a77;
+	background-color:#C6E1FC;
+	border-color:#338ab7;
+}
+
+.container {
+	color:#337ab7;
 }
 
 

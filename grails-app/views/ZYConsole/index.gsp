@@ -29,8 +29,8 @@
 			</table>
 			
 			<div style="text-align:center;margin-top:20px;">
-				<button type="button" class="btn btn-default ${page?.id ? '':'disabled'}" onclick="addSection()">添加Section</button>
-				<button type="submit" class="btn btn-default ${page?.id ? '':'disabled'}">保存</button>
+				<button type="button" class="btn btn-default ${page?.pageKey ? '':'disabled'}" onclick="addSection()">添加Section</button>
+				<button type="submit" class="btn btn-default ${page?.pageKey ? '':'disabled'}">保存</button>
 			</div>
 		</form>
 	</div>
