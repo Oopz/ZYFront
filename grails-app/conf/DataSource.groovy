@@ -50,7 +50,7 @@ environments {
 			driverClassName = "com.mysql.jdbc.Driver"
 			dialect = com.zy.mysql.UTF8MysqlDialect
 			username = "root"
-			password = "111111"
+			password = "surewin"
 			
 			properties {
 			   maxActive = -1
